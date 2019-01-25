@@ -1,0 +1,53 @@
+## program to take a matrix using list and display in matrix format
+
+r = int(input("Enter the number of rows"))
+c = int(input("Enter the number of columns"))
+column_list = []
+column_list1 = []
+
+print('Enter the details of matrix 1')
+for y in range(r):
+    row_list = []
+    for x in range(c):
+        print('Enter the element',x+1,'of row ',y+1,' : ')
+        z=int(input())
+        row_list.append(z)
+    column_list.append(row_list)
+
+print("the matrix 1 is : ",end='\n')
+
+for y in range(r):
+    for x in range(c):
+        print(column_list[y][x],end='  ')
+    print(end='\n')
+
+print('Enter the details of matrix 2')
+for y in range(r):
+    row_list1 = []
+    for x in range(c):
+        print('Enter the element',x+1,'of row ',y+1,' : ')
+        z=int(input())
+        row_list1.append(z)
+    column_list1.append(row_list1)
+
+print("the matrix 2 is : ",end='\n')
+
+for y in range(0,r):
+    for x in range(0,c):
+        print(column_list1[y][x],end='  ')
+    print(end='\n')
+
+print('The addition of matrix is',end='\n')
+
+
+for y in range(r):
+    row_list2 = []
+    for x in range(c):
+        print(column_list[y][x]+column_list1[y][x],end='  ')
+    print(end = '\n')
+        
+        
+   
+
+
+        
